@@ -1,0 +1,31 @@
+ALL,All Fields,All terms from all searchable fields
+UID,UID,Unique number assigned to publication
+FILT,Filter,Limits the records
+ACCN,Accession,Accession
+PMID,PubMed ID,PubMed ID
+TITL,Title,Title
+GENE,Gene Name,Gene Name
+GSYN,Gene Synonym,Gene Synonym
+COG,COG,Clusters of Orthologous Groups of proteins
+ECNO,EC/RN Number,EC number for enzyme or CAS registry number
+HMAP,HAMAP,HAMAP
+KO,KO,KO
+PROT,Protein Name,Name of protein
+PACC,Protein Accession,Protein Accession
+LTAG,Locus Tag,Locus Tag
+SLEN,Sequence Length,Length of sequence
+ORGN,Organism,Scientific and common names of organism, and all higher levels of taxonomy
+TXID,Taxonomy ID,Taxonomy ID
+CDAT,Creation Date,Creation Date
+MDAT,Modification Date,Modification Date
+SIZE,Size,Size
+DOM,Domain Name,Domain Name
+DOMS,Domains,Domains
+PUID,Protein GI,Protein GI
+PARA,Paralogs,Paralogs
+COGG,COG group,COG group
+AVGL,Average Length,Average Length
+PROP,Properties,Properties
+TPUB,Total Publications,Total Publications
+SPCN,SwissProt Accession,SwissProt Accession
+CONS,Conserved In,Conserved In

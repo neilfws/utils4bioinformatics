@@ -1,0 +1,26 @@
+ALL,All Fields,All terms from all searchable fields
+UID,UID,Unique number assigned to publication
+FILT,Filter,Limits the records
+ORGN,Organism,Exploded organism names
+ACCN,GEO Accession,Accession for GDS (DataSet), GPL (Platform), GSM (Sample), GSE (Series)
+GDST,GDS Text,GDS text from title and description
+GEOT,GEO Description/Title Text,Sample titles
+RTYP,Platform Reporter Type,Platform reporter type, e.g. genbank, clone, orf
+GTYP,DataSet Type,Type of dataset
+VTYP,Sample Value Type,Sample value type, e.g. log ratio, count
+NSAM,Number of Samples,Number of samples
+SRC,Sample Source,Sample source
+ID,ID_REF,Spot ID from GEO Platform, SAGE tag, Affy ProbeSet ID
+NAME,Reporter Identifier,Name or identifier for the spot, e.g. GenBank accession, CLONE_ID, ORF etc.
+SYMB,Gene Symbol,Gene symbol (name) from Entrez-Gene or Entrez-UniGene.
+GDSC,Gene Description,Gene Description
+RSTD,Ranked Standard Deviation,Ranked standard deviation
+RMAX,Max Value Rank,Maximal value of ranks
+RMIN,Min Value Rank,Minimal value of ranks
+FINF,Flag Information,Indicates an interesting or notable uid in the GDS context
+FTYP,Flag Type,Type of flag that indicates a uid of interest, or outliers etc.
+GI,GI,GenBank Identifier
+ATYP,Annotation Type,Type of annotation (gene, unigene, nucleotide)
+GO,Gene Ontology,Gene Ontology
+CHR,Chromosome,Chromosomes
+CPOS,Base Position,Chromosome base position

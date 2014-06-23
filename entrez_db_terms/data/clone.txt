@@ -1,0 +1,50 @@
+ALL,All Fields,All terms from all searchable fields
+UID,UID,Unique number assigned to publication
+FILT,Filter,Limits the records
+ACC,Accession,Accession of any internal or external identifier. Versions removed.
+ACCV,Accession Version,Accession and version of GENBANK accessions associated with clone records.
+ALAB,Alternate Library Abbreviation,Alternate Library Abbreviation
+ALN,Alternate Library Name,Alternate Library Name
+ASSA,Assembly Accession,Accession of assembly on which placed
+ASSN,Assembly Name,Assembly on which placed
+BREE,Breed,Breed
+CELL,Cell Line,Cell Line
+CELT,Cell Type,Cell Type
+CHRA,Chromosome Accession,Accession of chromosome on which placed
+CHRB,Chromosome Start,Chromosome start of placement
+CHRE,Chromosome Stop,Chromosome end of placement
+CLN,Clone Name,Clone Name
+CLA,Clone Name Alias,Clone Name Alias
+CULT,Cultivar,Cultivar
+CUAC,Cultivar Accession,Cultivar Accession provided in library submission XML
+DIST,Distributor,Library Distributor Name, provided in library submission XML
+DEST,Development Stage,=Development Stage provided in library submission XML
+GENE,Gene Name,Name or alias of Gene at same location as the placement of the clone
+GNID,Gene ID,GeneID of gene at same location as the placement of the clone
+GDSC,Gene Description,Full name (description) of gene at same location as the placement of the clone
+GI,GI,GIs associated with clone records
+ISOL,Isolate,Isolate provided in library submission XML
+LBR,Library Abbreviation,Library Abbreviation
+LID,Library ID,Library ID
+LIB,Library Name,Library name
+LIBT,Library Type,Library Type
+OT,Object type,Object type in Clone DB (library, clone)
+ORGA,Organ,Organ provided in library submission XML
+ORG,Organism,Organism name (exploded)
+PLCD,Placed,display Y/N for has_placement/no_placement
+PLMT,Placement Method,Placement Method
+PLCN,Placement Confidence,Placement Confidence
+POPU,Population,Population provided in library submission XML
+PROP,Properties,Properties of data set for example HasInsert HasEnd IsPlaced IsConcordant
+PID,Genome Project Id,Genome Project Id provided in library submission XML
+PMID,PMID,PubMed Id provided in library submission XML
+SCFA,Scaffold Accession,Accession of scaffold on which on which placed
+SCFB,Scaffold Start,Scaffold start of placement
+SCFE,Scaffold Stop,Scaffold stop of placement
+STRA,Strain,Strain
+STS,STS,STS's that have been mapped to any sequences associated with clone records
+TXID,Taxonomy ID,Taxonomy ID
+TI,TI,TIs associated with clone records
+TISS,Tissue,Tissue provided in library submission XML
+VN,Vector,Vector name provided in library submission XML
+VT,Vector Type,Vector type provided in library submission XML

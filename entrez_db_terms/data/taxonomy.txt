@@ -1,0 +1,19 @@
+ALL,All Fields,All terms from all searchable fields
+UID,Taxonomy ID,Unique number assigned to publication
+FILT,Filter,Limits the records
+SCIN,Scientific Name,Scientific name of organism
+COMN,Common Name,Common name of organism
+TXSY,Synonym,Synonym of organism name
+ALLN,All Names,All aliases for organism
+NXLV,Next Level,Immediate parent in taxonomic hierarchy
+SBTR,Subtree,Any parent node in taxonomic hierarchy
+LNGE,Lineage,Lineage in taxonomic hierarchy
+GC,GC,Nuclear genetic code
+MGC,MGC,Mitochondrial genetic code
+PGC,PGC,Mitochondrial genetic code
+TXDV,Division,GenBank division
+RANK,Rank,Hierarchical position (e.g., order, genus)
+EDAT,Entrez Date,Date record first accessible through Entrez
+MDAT,Modification Date,Date of last update
+PROP,Properties,Property defined on particular node (e.g., terminal node)
+WORD,Text Word,Free text associated with record

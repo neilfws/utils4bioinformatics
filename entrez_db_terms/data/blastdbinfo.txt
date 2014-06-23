@@ -1,0 +1,15 @@
+ALL,All Fields,All terms from all searchable fields
+UID,UID,Unique number assigned to publication
+FILT,Filter,Limits the records
+DB,Database Name,Official name of the database
+TITL,Database Title,Words in the title of database (e.g., "NCBI Transcript Reference Sequences")
+DATE,Last Update,Date of last database update
+ORGN,Database Organism Taxid,Organism Taxid
+ASM,Genome Collection Assembly Name,Genome Collection Assembly Name
+SEQT,Blast Sequence Type,One of genomic, cdna, other-dna, or protein, of which genomic and cdna could be further specified
+SEQS,Blast Sequence Strategy,Appropriate sequence strategy for the sequence type specified
+SRC,Blast Database Source,States where the sequences came from, e.g., genbank, refseq, trace, etc.
+KEYW,Keyword,Search term identifying this database entry
+PRJ,NCBI Genome Project ID,NCBI Genome Project Identifier
+GPB,Gpipe Build Name,Gpipe Build
+WGPR,NCBI WGS Project ID,NCBI WGS Project Identifier

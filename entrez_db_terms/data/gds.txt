@@ -1,0 +1,30 @@
+ALL,All Fields,All terms from all searchable fields
+UID,UID,Unique number assigned to publication
+FILT,Filter,Limits the records
+ORGN,Organism,exploded organism names
+ACCN,GEO Accession,accession for GDS (DataSet), GPL (Platform), GSM (Sample), GSE (Series)
+TITL,Title,Words in title of record
+DESC,Description,Text from description, summary and other similar fields
+SFIL,Supplementary Files,Supplementary Files
+ETYP,Entry Type,Entry type (DataSet or Series)
+STYP,Sample Type,Sample type
+VTYP,Sample Value Type,type of values, e.g. log ratio, count
+PTYP,Platform Technology Type,Platform technology type
+GTYP,DataSet Type,type of dataset
+NSAM,Number of Samples,Number of samples
+SRC,Sample Source,sample source
+AUTH,Author,author of the GEO Sample, Platform or Series
+INST,Submitter Institute,institute, or organization affiliatedd with contributers
+NPRO,Number of Platform Probes,number of platform probes
+SSTP,Subset Variable Type,subset variable type
+SSDE,Subset Description,subset description
+GEID,Reporter Identifier,name or identifier for the spot, e.g. GenBank, UniGene ID, Locus Link ID etc.
+PDAT,Publication Date,publication date from the GEO related entities
+UDAT,Update Date,date
+TAGL,Tag Length,Tag/Signature length for SAGE/MPSS
+RGSE,Related Series,Related Series
+RGPL,Related Platform,Related Platform
+MESH,MeSH Terms,Medical Subject Headings
+PROJ,Project,Project
+ATNM,Attribute Name,Attribute Name
+ATTR,Attribute,Attribute

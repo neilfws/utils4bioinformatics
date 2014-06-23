@@ -1,0 +1,30 @@
+ALL,All Fields,All terms from all searchable fields
+UID,UID,Unique number assigned to publication
+FILT,Filter,Limits the records
+TITL,Name of the ClinVar record,Constructed from variant and phenotype names
+WORD,Text Word,Free text associated with record
+ORGN,Organism,scientific and common names of organism
+MDAT,Modification Date,The last date on which the record was updated
+CHR,Chromosome,Chromosome number or numbers; also 'mitochondrial', 'unknown' properties
+GENE,Gene Name,Symbol or symbols of the gene
+MIM,MIM,MIM number from OMIM
+DIS,Disease/Phenotype,Diseases or traits associated with this record
+ACCN,ClinVar accession,Accession of the genotype/phenotype assertion
+VRID,Variant ID,Public ID of a variant
+TRID,Trait identifier,Public identifier for a trait (e.g. CUI, HPO)
+PROP,Properties,Properties of ClinVar record
+CDAT,Creation Date,The date on which this record first appeared
+PMID,PubMed ID,PubMed ids of accessions linked to the record
+GID,Gene ID,Gene ID
+TID,Taxonomy ID,taxonomy id
+DDAT,Date Discontinued,The date on which the record was discontinued
+CPOS,Base Position,Chromosome base position
+GFN,Gene Full Name,Gene full name
+PFN,Protein Full Name,Protein full name
+SUB,Submitter,Organization or submitter handle making the submission
+VRNM,Variant name,Names used for this allele
+VRTP,Type of variation,Type of sequence change/variant call
+MCNS,Molecular consequence,Consequence of the variation at the molecular level.
+RVST,Review status,Review status
+ALID,AlleleID,Unique identifier assigned to a specific sequence change at a location.
+ORIG,Origin,Origin

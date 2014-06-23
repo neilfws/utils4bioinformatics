@@ -1,0 +1,22 @@
+ALL,All Fields,All terms from all searchable fields
+UID,MIM ID,Unique number assigned to OMIM record
+FILT,Filter,Limits the records
+TITL,Title,Words in title of record
+WORD,Text Word,Free text associated with record
+AUTH,Contributor,Contributor to OMIM record
+CLIN,Clinical Synopsis,Clinical features of disorder
+MDAT,Modification Date,The last date on which the record was updated
+ALVR,Allelic Variant,A subset of disease-producing mutations
+MDHS,Modification History,All dates on which the record was updated
+REFR,Reference,Authors and titles of citations
+GMAP,Gene Map,Chromosomal map location
+DSDR,Gene Map Disorder,Text word in disorder
+GENE,Gene Name,Name of gene associated with record
+ECNO,EC/RN Number,EC number for enzyme or CAS registry number
+CHR,Chromosome,Chromosome number; also 'mitochondrial', 'unknown' properties
+EDTR,Editor,A username of an OMIM record Editor
+PROP,Properties,Properties of OMIM record
+PDAT,Publication Date,The date on which this record first appeared
+CSK,Clinical Synopsis Key,The keyword designating a part of the Clinical Synopsis
+CSED,Clinical Synopsis Editor,A username of an OMIM record Editor
+CSDT,Clinical Synopsis Date,The last date on which the Clinical Synopsis was updated

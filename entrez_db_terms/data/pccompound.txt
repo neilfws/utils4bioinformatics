@@ -1,0 +1,69 @@
+ALL,All Fields,All terms from all searchable fields
+UID,CompoundID,Compound ID
+FILT,Filter,Limits the records
+SRC,SourceName,Source Name
+SRID,SourceID,Source ID
+SRCC,SourceCategory,Source Category
+CDAT,CreateDate,Record Create Date
+BAID,BioAssayID,Assay ID
+AA,ActiveAid,Active AID
+IA,InactiveAid,Inactive AID
+INCH,InChI,InChI
+IKEY,InChIKey,InChI Key
+CSYN,CompleteSynonym,Complete Synonym
+SYNO,Synonym,Synonym
+MSHT,MeSHTerm,MeSH Term
+CMST,CompleteMeSHTerm,Complete MeSH Term
+MSHN,MeSHTreeNode,MeSH Tree Node
+PHMA,PharmAction,Pharmacological Action
+MHD,MeSHDescription,MeSH Description
+ELMT,Element,Element
+MW,MolecularWeight,Molecular Weight
+TFC,TotalFormalCharge,Total Formal Charge
+UPAC,IUPACName,IUPAC Name
+XLGP,XLogP,XLogP
+CPLX,Complexity,Complexity
+RBC,RotatableBondCount,Rotatable Bond Count
+HBDC,HydrogenBondDonorCount,Hydrogen Bond Donor Count
+HBAC,HydrogenBondAcceptorCount,Hydrogen Bond Acceptor Count
+HAC,HeavyAtomCount,Heavy Atom Count
+ACC,AtomChiralCount,Atom Chiral Count
+ACDC,AtomChiralDefCount,Atom Chiral Defined Count
+ACUC,AtomChiralUndefCount,Atom Chiral Undefined Count
+BCC,BondChiralCount,Bond Chiral Count
+BCDC,BondChiralDefCount,Bond Chiral Defined Count
+BCUC,BondChiralUndefCount,Bond Chiral Undefined Count
+IAC,IsotopeAtomCount,Isotope Atom Count
+CUC,CovalentUnitCount,Covalent Unit Count
+TC,TautomerCount,Tautomer Count
+AC,ActiveAidCount,Active AID Count
+IC,InactiveAidCount,Inactive AID Count
+TAC,TotalAidCount,Total AID Count
+AAR,ActiveAidRatio,Active AID Ratio
+SID,SubstanceID,Substance ID
+TPSA,TPSA,TPSA
+ASRC,AssaySourceName,Assay Source Name
+EMAS,ExactMass,Exact Mass
+MMAS,MonoisotopicMass,Monoisotopic Mass
+ACON,ActiveConcentration,Active Concentration
+TCON,TestedConcentration,Tested Concentration
+VL3D,Volume3D,3D Volume
+X3D,XStericQuadrupole3D,3D X Steric Quadrupole
+Y3D,YStericQuadrupole3D,3D Y Steric Quadrupole
+Z3D,ZStericQuadrupole3D,3D Z StericQuadrupole
+PAID,PharmActionID,Pharmacological Action ID
+STID,StructureID,Depositor Associated Structure ID
+FC3D,FeatureCount3D,3D Feature Count
+FAC3,FeatureAcceptorCount3D,3D Feature Acceptor Count
+FDC3,FeatureDonorCount3D,3D Feature Donor Count
+FNC3,FeatureAnionCount3D,3D Feature Anion Count
+FTC3,FeatureCationCount3D,3D Feature Cation Count
+FRC3,FeatureRingCount3D,3D Feature Ring Count
+FHC3,FeatureHydrophobeCount3D,3D Feature Hydrophobe Count
+CMR3,ConformerModelRmsd3D,3D Conformer Model RMSD
+ERC3,EffectiveRotorCount3D,3D Effective Rotatable Bond Count
+DCSY,DepositorCompleteSynonym,Depositor Complete Synonym
+DSYN,DepositorSynonym,Depositor Synonym
+CCNT,ConformerCount3D,3D Conformer Count
+DCNT,DepositorCount,Depositor Count
+PTNT,Patent,Patent

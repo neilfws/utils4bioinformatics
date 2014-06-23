@@ -1,0 +1,23 @@
+ALL,All Fields,All terms from all searchable fields
+UID,UID,Unique number assigned to publication
+FILT,Filter,Limits the records
+TITL,Title,Article title
+KYPH,Keyphrase,High-scored field for exact-matched phrases
+STXT,Secondary Text,Special text word
+CONP,Concept Phrases,Generated keywords
+BOOK,Book,ID of the book that contains the document
+PID,ParentId,ID of the book
+PMID,PmId,PubMed ID
+RD,ReleaseDate,ReleaseDate
+SUB,Subject,Subject
+AID,AccessionID,Accession ID
+UMLS,UMLSID,UMLS Concept ID
+ICD9,ICD9ID,ICD-9 ID
+BCID,BioconceptsID,BioConcepts ID
+PDAT,Date of publication,Date of publication
+UDAT,Update Date,Content update date
+DR,DrugName,Drug brand name
+TYPE,Type,Document type (Book/Article/Chapter)
+CAT,Category,Category
+PUBL,Publisher,PMH Content Provider
+CLID,CollectionId,Collection Identifier

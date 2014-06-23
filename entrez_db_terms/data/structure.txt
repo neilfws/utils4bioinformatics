@@ -1,0 +1,53 @@
+ALL,All Fields,All terms from all searchable fields
+UID,MMDB ID,mmdbId
+FILT,Filter,Limits the records
+ACCN,PDB Accession,PDB Accession
+ECNO,EC/RN Number,EC/RN Number
+RESO,Resolution,Resolution
+EXPM,Experimental Method,Experimental Method
+TITL,Title,Citation Title
+ABS,Abstract,The abstracts of all PubMed references that are linked to the structure
+AUTH,Author,Citation Author
+PCLA,PDB Class,Pdb Class
+PSRC,PDB Source,Pdb Source
+PDSC,PDB Description,PdbDescr
+PCOM,PDB Comment,PdbComment
+PDD,PDB Deposit Date,PDB Deposit Date
+DDAT,MMDB Entry Date,MMDB Deposit Date
+MDAT,MMDB Modify Date,MMDB Modify Date
+LCOD,PDB Chemical Code,chemical ligand codes taken from PDB file
+LNAM,Chemical Name,chemical ligand names taken from PDB file
+CSYN,Chemical Synonyms,Chemical synonyms taken from PubChem
+LDES,Chemical Description,Chemical description taken from PDB
+ORGN,Organism,Organism Name
+TXID,Taxonomy ID,Numerical taxonomy identifier
+PMC,BioUnit Protein Molecule Count,Count of Protein Molecules in BioUnit
+DMC,BioUnit DNA Molecule Count,Count of DNA molecules in BioUnit
+RMC,BioUnit RNA Molecule Count,Count of RNA molecules in BioUnit
+BPC,BioUnit Biopolymer Count,Count of Biopolymers in BioUnit
+LCOU,BioUnit Chemical Count,Count of Chemical Molecules in BioUnit
+OCOU,BioUnit Other Molecule Count,Count of Other Molecules in BioUnit
+JOUR,Journal,Source journal of structure
+CDID,Conserved Domain PSSMID,identifier for a conserved domain cluster
+CDSN,Conserved Domain Short Name,Short name of the domain of a conserved domain cluster
+CDDT,Conserved Domain Title,Title of the domain of a conserved domain cluster
+CDDF,Conserved Domain Description,Defline of the domain of a conserved domain cluster
+SFID,Conserved Domain Superfamily PSSMID,identifier for a superfamily domain cluster
+SPFN,Conserved Domain Superfamily Short Name,Short name of a superfamily of conserved domain clusters
+SPTL,Conserved Domain Superfamily Title,Title of a superfamily of conserved domain clusters
+SPDF,Conserved Domain Superfamily Description,Definition line of a superfamily cluster of conserved domain
+OS,Oligomeric State,Oligomeric state of the biological unit
+PNAM,Protein Name,Names of Protein Molecules
+GN,Gene Name,Names of genes associated with protein molecules
+GDSC,Gene Description,Descriptions of genes associated with protein molecules
+DNAM,DNA Name,Names of DNA Molecules
+RNAM,RNA Name,Names of RNA Molecules
+ONAM,Other Molecule Name,Names of Other Molecules
+APMC,ASU Protein Molecule Count,Count of Protein Molecules in ASU
+ADMC,ASU DNA Molecule Count,Count of DNA molecules in ASU
+ARMC,ASU RNA Molecule Count,Count of RNA molecules in ASU
+ABPC,ASU Biopolymer Count,Count of Biopolymers in ASU
+ALCT,ASU Chemical Count,Count of Chemicals in ASU
+AOCT,ASU Other Molecule Count,Count of other molecules in ASU
+MLWT,BioUnit Molecular Weight,Molecular Weight of the default Biological Assembly
+FC,Number of PDB Records per Structure,Number of PDB records that have been combined to define a complete biological assembly. (For most structures, one record suffices; very large structures were split by the PDB into multiple records.)

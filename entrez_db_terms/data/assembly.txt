@@ -1,0 +1,44 @@
+ALL,All Fields,All terms from all searchable fields
+UID,UID,Unique number assigned to publication
+FILT,Filter,Limits the records
+ACCN,Accession,Chromosome accessions
+ASAC,Assembly Accession,Space delimited assembly accessions w/ &amp; w/o versions
+ASLV,Assembly Level,How assembled is this assembly. 'Contig' to 'Chromosome'
+TXID,Taxonomy ID,Taxonomy ID
+ORGN,Organism,Exploded organism names
+RUID,RefSeq Release ID,Release Id of RefSeq Assembly.
+GUID,GenBank Release ID,Release Id of GenBank synonym of this Assembly.
+UIDS,All Uids,Pair-id, GB-id, and RS-id of this Assembly.
+PROJ,BioProject IDs and Accessions,Uid and accessions of this assembly's projects
+SAMP,Biosample,Biosample Accession and Id
+NAME,Assembly Name,Assembly name
+ALLN,All Names,All names, space separated
+DESC,Description,Assembly description
+COV,Coverage,Sequencing coverage
+CLAS,Assembly Class,Type of the assembly
+RELS,Date - Assembly Release,Date the assembly was first released
+SRDT,Date - Sequences Release,Date the most recent sequence went live in ID
+UPDT,Date - Assembly Update,Date the assembly was last updated
+LEN,Total Sequence Length,Total length of chromosome/genome including bases and gaps divided by 1,000,000.
+REPL,Chromosome Count,Number of chromosomes in assembly
+PLAC,Placed Scaffolds Count,Number of placed scaffolds
+UNLO,Unlocalized Scaffolds Count,Number of unordered(unlocalized) scaffolds belonging to chromosomes
+UNPL,Unplaced Scaffolds Count,Number of unplaced scaffolds which do not belong to any chromosome, ie ChrUn
+CN50,Contig N50,Contig length at which 50% of total bases in assembly are in contigs of that length or greater
+SN50,Scaffold N50,Scaffold length at which 50% of total bases in assembly are in contigs of that length or greater
+CL50,Contig L50,Number of contigs that are greater than or equal to the N50 length.
+SL50,Scaffold L50,Number of scaffolds that are greater than or equal to the N50 length.
+CNTG,Contig Count,Number of contigs
+UNGL,Ungapped Length,Total length excluding gaps in chromosome/genome divided by 1,000,000
+PROP,Properties,Properties
+SUBO,Submitter Organization,Organization that submitted this assembly
+INFR,Infraspecifc name,Infraspecific name: breed, cultivar, strain, ecotype
+ISOL,Isolate,Isolate name
+SEX,Sex,Sex
+ASMM,Assembly Method,Assembly Method
+GCOV,Genome Coverage,Genome Coverage
+TECH,Sequencing Technology,Sequencing Technology
+EXFV,Expected Final Version,Expected Final Version
+RGAS,Reference Guided Assembly,Reference Guided Assembly
+SCAM,Single Cell Amplification,Single Cell Amplification
+RCAT,RefSeq Category,RefSeq Category

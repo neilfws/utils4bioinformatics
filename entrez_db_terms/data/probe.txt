@@ -1,0 +1,26 @@
+ALL,All Fields,All terms from all searchable fields
+UID,UID,Unique number assigned to publication
+FILT,Filter,Limits the records
+AUTH,Author,Author
+DIST,Distributor,Distributor
+GENE,Gene Name,Gene Name
+GNID,Gene ID,Gene ID
+KYWD,Application,Application
+ORGN,Organism,Organism
+PRNM,Probe Name,Probe Name
+PRTY,Probe Type,Probe Type
+PROP,Properties,Properties
+WORD,Text Word,Text Word
+TITL,Title,Title
+CAPT,Caption,Caption
+SUBM,Submission,Submission
+COLL,Platform Name,Platform Name
+SEQ,Sequence,Sequence
+ACCN,Sequence accession,Semicolon delimited sequence accession(s)
+PMID,Pubmed ID,Pubmed ID
+MDAT,Modification Date,Date of the last update of the submission
+PDAT,Publication Date,Date sequence added to GenBank
+VAL,Validation,Validation
+PLID,Platform ID,Platform ID
+USTS,UniSTS ID,Legacy UniSTS ID
+PSET,Probeset UID,Probeset(s) this probe belongs to

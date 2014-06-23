@@ -1,0 +1,33 @@
+ALL,All Fields,All terms from all searchable fields
+UID,UID,Unique number assigned to a gene record
+FILT,Filter,Limits the records
+TITL,Gene/Protein Name,gene or protein name
+WORD,Text Word,Free text associated with record
+ORGN,Organism,scientific and common names of organism
+MDAT,Modification Date,The last date on which the record was updated
+CHR,Chromosome,Chromosome number or numbers; also 'mitochondrial', 'unknown' properties
+MV,Default Map Location,Chromosomal map location as displayed in MapViewer
+GENE,Gene Name,Symbol or symbols of the gene
+ECNO,EC/RN Number,EC number for enzyme or CAS registry number
+MIM,MIM ID,MIM number from OMIM
+DIS,Disease/Phenotype,Name(s) of diseases associated with this gene. When available, OMIM name will be used
+ACCN,Nucleotide/Protein Accession,Nucleotide or protein accession(s) associated with this gene
+UGEN,UniGene Cluster Number,UniGene cluster number for this gene
+PROP,Properties,Properties of Gene record
+CDAT,Creation Date,The date on which this record first appeared
+NCAC,Nucleotide Accession,nucleotide accessions of seqeunces
+NUID,Nucleotide UID,nucleotide uids of sequences
+PACC,Protein Accession,protein accessions
+PUID,Protein UID,protein uids
+PMID,PubMed ID,PubMed ids of accessions linked to the record
+TID,Taxonomy ID,taxonomy id
+GO,Gene Ontology,Gene Ontology
+DOM,Domain Name,Domain Name
+DDAT,Date Discontinued,The date on which the record was discontinued
+CPOS,Base Position,Chromosome base position
+GFN,Gene Full Name,Gene full name
+PFN,Protein Full Name,Protein full name
+GL,Gene Length,Gene length
+XC,Exon Count,Exon count
+GRP,Group,Relationships for this gene
+PREF,Preferred Symbol,Preferred symbol of the gene

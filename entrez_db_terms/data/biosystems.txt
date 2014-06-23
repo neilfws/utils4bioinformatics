@@ -1,0 +1,27 @@
+ALL,All Fields,All terms from all searchable fields
+UID,UID,Unique number assigned to publication
+FILT,Filter,Limits the records
+SRC,SourceName,Name of the organization that is the source of the record
+SRID,SourceID,A numerical id that is assigned to a particular source of biosystem records
+TYPE,BioSystemType,Type of the biosystem
+PDAT,CreateDate,The date the biosystem record first appeared in the NCBI biosystems database
+MDAT,ModifyDate,The date the biosystem record last changed in the NCBI biosystems database
+SACC,SourceAccession,The accession used by the source of the biosystem
+TITL,Title,The name of the biosystem
+DESC,Description,The text description of a biosystem
+COM,Comments,Comments on the biosystem
+ORGN,Organism,Organism that contain the biosystem
+PN,ProteinName,Names of proteins in a biosystem (definition line)
+CN,ChemicalName,Names of small molecules in a biosystem (taken from PubChem)
+SEID,SidExternalID,Id given to a small molecule by the source of a biosystem
+GN,GeneName,Gene name
+GEID,GeneExternalID,Id given to a gene by the source of a biosystem
+PID,ProteinID,Protein accessions and gis in a biosystem
+CID,CID,PubChem compound identifiers (cid) found in a biosystem
+GID,GeneID,NCBI gene ids found in a biosystem
+SID,SID,PubChem substance ids (sid) found in a biosystem
+ACCN,Accession,The biosystem accession (bsid plus version)
+SCT,SIDCount,Total Count of PubChem substance ids (sid) found in a biosystem
+CCT,CIDCount,Total Count of PubChem compound ids (cid) found in a biosystem
+GCT,GeneCount,Total Count of NCBI Gene records (geneid) found in a biosystem
+PCT,ProteinCount,Total Count of NCBI Protein records (gi) found in a biosystem

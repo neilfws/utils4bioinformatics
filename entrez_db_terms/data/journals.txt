@@ -1,0 +1,19 @@
+ALL,All Fields,All terms from all searchable fields
+UID,UID,Unique number assigned to publication
+FILT,Filter,Limits the records
+TITL,Title,Document title
+ESSN,eISSN,eISSN
+PSSN,pISSN,pISSN
+ISSN,ISSN,ISSN
+MABR,Title Abbreviation,Title Abbreviation
+ISOA,ISO Abbreviation,ISO Abbreviation
+MULT,Multi,Multi
+ID,NLM ID,NlmId
+ALIA,Alias,Alias
+ST,Subject Terms,Subject Terms
+WORD,Text Word,Text Word
+SYR,Start Year,First year of publication
+EYR,End Year,Last year of publication
+LANG,Language,Language the title is published in
+CNTY,Place of Publication,Place of publication
+XS,Indexing Subset,Indexing Subset

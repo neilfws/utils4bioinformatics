@@ -1,0 +1,59 @@
+ALL,All Fields,All terms from all searchable fields
+UID,SubstanceID,Substance ID
+FILT,Filter,Limits the records
+SRC,SourceName,Source Name
+CSN,CurrentSourceName,Current Source Name
+SRID,SourceID,Source ID
+SRCC,SourceCategory,Source Category
+SRD,SourceReleaseDate,Source Release Date
+DDAT,DepositDate,Deposit Date
+MDAT,ModifyDate,Modification Date
+BAID,BioAssayID,Assay ID
+AA,ActiveAid,Active AID
+IA,InactiveAid,Inactive AID
+INCH,InChI,InChI
+IKEY,InChIKey,InChI Key
+CSYN,CompleteSynonym,Complete Synonym
+SYNO,Synonym,Synonym
+MSHT,MeSHTerm,MeSH Term
+CMST,CompleteMeSHTerm,Complete MeSH Term
+MSHN,MeSHTreeNode,MeSH Tree Node
+PHMA,PharmAction,Pharmacological Action
+CMT,Comment,Comment
+MHD,MeSHDescription,MeSH Description
+ELMT,Element,Element
+MW,MolecularWeight,Molecular Weight
+TFC,TotalFormalCharge,Total Formal Charge
+UPAC,IUPACName,IUPAC Name
+XLGP,XLogP,XLogP
+CPLX,Complexity,Complexity
+RBC,RotatableBondCount,Rotatable Bond Count
+HBDC,HydrogenBondDonorCount,Hydrogen Bond Donor Count
+HBAC,HydrogenBondAcceptorCount,Hydrogen Bond Acceptor Count
+HAC,HeavyAtomCount,Heavy Atom Count
+ACC,AtomChiralCount,Atom Chiral Count
+ACDC,AtomChiralDefCount,Atom Chiral Defined Count
+ACUC,AtomChiralUndefCount,Atom Chiral Undefined Count
+BCC,BondChiralCount,Bond Chiral Count
+BCDC,BondChiralDefCount,Bond Chiral Defined Count
+BCUC,BondChiralUndefCount,Bond Chiral Undefined Count
+IAC,IsotopeAtomCount,Isotope Atom Count
+CUC,CovalentUnitCount,Covalent Unit Count
+TC,TautomerCount,Tautomer Count
+AC,ActiveAidCount,Active AID Count
+IC,InactiveAidCount,Inactive AID Count
+TAC,TotalAidCount,Total AID Count
+AAR,ActiveAidRatio,Active AID Ratio
+SCID,StandardizedCID,Standardized CID
+CCID,ComponentCID,Component CID
+CID,CompoundID,Compound ID
+TPSA,TPSA,TPSA
+ASRC,AssaySourceName,Assay Source Name
+EMAS,ExactMass,Exact Mass
+MMAS,MonoisotopicMass,Monoisotopic Mass
+ACON,ActiveConcentration,Active Concentration
+TCON,TestedConcentration,Tested Concentration
+PAID,PharmActionID,Pharmacological Action ID
+STID,StructureID,Structure ID
+HUD,HoldUntilDate,Hold Until Date
+PTNT,Patent,Patent

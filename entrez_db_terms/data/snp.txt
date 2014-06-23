@@ -1,0 +1,39 @@
+ALL,All Fields,All terms from all searchable fields
+UID,UID,Unique number assigned to publication
+FILT,Filter,Limits the records
+RS,Reference SNP ID,Clustered SNP ID (rs)
+CHR,Chromosome,chromosomes
+GENE,Gene Name,locus link symbol
+HAN,Submitter Handle,Submitter Handle
+ACCN,Accession,nucleotide accessions
+LLID,LocusLink ID,locus link UID
+ORGN,Organism,Organism
+FXN,Function Class,Function class
+GTYP,Genotype,Genotype info
+NREF,non reference assembly,SNP not mapped to reference assembly
+HETZ,Heterozygosity,Heterozygosity
+MPWT,Map Weight,Map weight
+VALI,Validation Status,Validation status
+SRAT,Success Rate,Success rate
+CBID,Create Build ID,Original Build ID
+UBID,Update Build ID,Update Build ID
+PDAT,Publication Date,SNP Publication date
+MDAT,Modification Date,SNP modification date
+PCLS,Population Class,Population classification based on geographic location
+MCLS,Method Class,Assay Method
+SS,Submitter SNP ID,Submitter ID
+SID,Local SNP ID,Local SNP ID
+VARI,Allele,Allele
+SCLS,SNP Class,SNP class
+GDSC,Gene Description,description of gene
+CPOS,Base Position,Chromosome base position
+GPOS,Contig Position,Contig base position
+WORD,Text Word,Free text associated with record
+WTAA,Reference Amino Acid,Reference Amino Acid
+MTAA,Variant Amino Acid,Variant or Mutant Amino Acid
+RSNP,Reference SNP,Reference SNP
+SIDX,SNP Index,SNP Index
+ALOR,SNP Allele Origin,Allele originated from somatic or germline
+SUSP,Suspected false variation,Variation suspected to be false based on evidence
+CLIN,Clinical Significance,Variations with clinical effects or significances
+GMAF,Global Minor Allele Frequency,Minor Allele Frequency derived from global population (ie. 1000G)

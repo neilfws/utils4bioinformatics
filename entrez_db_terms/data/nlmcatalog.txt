@@ -1,0 +1,42 @@
+ALL,All Fields,All terms from all searchable fields
+UID,UID,Unique number assigned to publication
+FILT,Filter,Limits the records
+ITAG,Abstract/Index Tags,Abstract/Index Tags
+AUTH,Author,Author(s) of publication
+FULL,Author Full Name,Full Names of Authors
+CALL,Call Number,Call Number
+CNAM,Corporate/Conference Name,Corporate/Conference Name
+ITEM,Item Type,Item Type
+JOUR,Journal,Journal
+LANG,Language,Language of publication
+RTYP,Resource Type,Resource Type
+MESH,MeSH Terms,Medical Subject Headings assigned to publication
+MAJR,MeSH Major Topic,MeSH terms of major importance to publication
+SUBH,MeSH Subheading,Additional specificity for MeSH term
+OLIO,Olio,Olio
+OTHR,Other Number,Other Number
+OTRM,Other Term,Other terms associated with publication
+PERS,Personal Name as Subject,Personal Name as Subject
+FPER,Personal Full Name as Subject,Full Personal Name as Subject
+CNTY,Country of Publication,Country of publication
+PDAT,Publication Year,Year of publication
+PSTA,Publication Status,Status of publication
+PTYP,Publication Type,Type of publication (e.g., review)
+PUBL,Publisher,Publisher
+SERI,Series,Series
+TITL,Title,Words in title of publication
+URL,URL,URL
+NID,NLM Unique ID,NLM Unique ID
+EDAT,Entrez Date,Date publication first accessible through Entrez
+AI,Authority Information,Authority Information
+AIID,AIID,Authority ID
+WORD,Text Word,Text
+ST,Broad Subject Term,Broad Subject Term
+CFS,Current Format Status,Current Format Status
+XS,Indexing Subset,Indexing Subset
+ISO,ISO Abbreviation,ISO Abbreviation
+SYR,Publication Start Year,Publication Start Year
+EYR,Publication End Year,Publication End Year
+IS,ISSN,ISSN
+MABR,NLM Title Abbreviation,NLM Title Abbreviation
+MULT,Multi,Multi

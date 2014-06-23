@@ -1,0 +1,25 @@
+ALL,All Fields,All terms from all searchable fields
+UID,UID,Unique number assigned to publication
+FILT,Filter,Limits the records
+AUTH,Author,Section's author
+CA,Corporate Author,Corporate Author of publication
+FA,Full Author Name,Full Author Name(s) of publication
+FE,Full Editor Name,f
+TITL,Title,Section's title
+TYPE,Type,Section's type
+STXT,Secondary Text,Special text word
+CONP,Concept Phrases,Generated keywords
+BOOK,Book,ID of the book that contains the document
+RMID,RefPMID,Citation search by PmId
+RID,Rid,Book internal ID
+PUBN,Publisher,Publisher's Name
+PDAT,Publication Year,Publication Year
+ISBN,ISBN,ISBN
+ATTR,Attribute,Attributes in key value ordered pairs
+EDIT,Editor,Section's Editor
+RD,Release Date,Release Date
+SUB,Subject,Subject
+RT,Resource Type,Resource Type
+AID,Accession ID,Accession ID
+BACI,Book Accession ID,Book Accession ID
+CHID,Chapter Accession ID,Chapter Accession ID

@@ -1,0 +1,28 @@
+ALL,All Fields,All terms from all searchable fields
+UID,UID,Unique number assigned to genome
+FILT,Filter,Limits the records
+ORGN,Organism,Organism
+PID,ProjectID,Project ID
+PRJA,Project Accession,Project Accession
+PRJT,Project Type,Project Type
+DFLN,Title,Genome short description
+DSCR,Genome description,Genome full description
+STAT,Status,Bioproject status
+AID,AssemblyID,Release ID of full assembly
+AACC,Assembly Accession,Accession of full assembly
+ANAM,Assembly Name,Name of full assembly
+GI,Replicon GI,Replicon GI
+ACCN,Replicon accession,Replicon Accession
+RNAM,Replicon name,Replicon Name
+PACC,Protein Accession,Protein Accession
+PROT,Protein Name,Protein Name
+PGI,Protein GI,protein GI
+GNID,GeneID,GeneID
+GENE,Gene Name,Gene Name
+LTAG,Locus Tag,Locus Tag
+WGSP,WGS prefix,WGS Prefix
+PMID,PubMed ID,Unique identifier from PubMed
+BIOP,biological properties,Biological Properties
+PCID,ProtClust ID,Protein Clusters ID
+PROP,Properties,Project/Organism Properties
+CDT,Create Date,Create Date

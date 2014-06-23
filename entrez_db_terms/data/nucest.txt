@@ -1,0 +1,36 @@
+ALL,All Fields,All terms from all searchable fields
+UID,UID,Unique number assigned to each sequence
+FILT,Filter,Limits the records
+WORD,Text Word,Free text associated with record
+TITL,Title,Words in definition line
+KYWD,Keyword,Nonstandardized terms provided by submitter
+AUTH,Author,Author(s) of publication
+JOUR,Journal,Journal abbreviation of publication
+VOL,Volume,Volume number of publication
+ISS,Issue,Issue number of publication
+PAGE,Page Number,Page number(s) of publication
+ORGN,Organism,Scientific and common names of organism, and all higher levels of taxonomy
+ACCN,Accession,Accession number of sequence
+PACC,Primary Accession,Does not include retired secondary accessions
+GENE,Gene Name,Name of gene associated with sequence
+PROT,Protein Name,Name of protein associated with sequence
+ECNO,EC/RN Number,EC number for enzyme or CAS registry number
+PDAT,Publication Date,Date sequence added to GenBank
+MDAT,Modification Date,Date of last update
+SUBS,Substance Name,CAS chemical name or MEDLINE Substance Name
+PROP,Properties,Classification by source qualifiers and molecule type
+SQID,SeqID String,String identifier for sequence
+GPRJ,BioProject,BioProject
+SLEN,Sequence Length,Length of sequence
+FKEY,Feature key,Feature annotated on sequence
+ID,EST id,EST id in est table
+NAME,EST Name,EST uid in est table
+CLON,Clone ID,clone id
+LIB,Library Name,Library Name
+SUBM,Submitter Name,Submitter Name
+CIT,Citation Title,Citation Title Publication
+STRN,Strain,Strain
+ISOL,Isolate,Isolate
+CULT,Cultivar,Cultivar
+BRD,Breed,Breed
+BIOS,BioSample,BioSample

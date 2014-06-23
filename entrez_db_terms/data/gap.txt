@@ -1,0 +1,38 @@
+ALL,All Fields,All terms from all searchable fields
+UID,UID,Unique number assigned to publication
+FILT,Filter,Limits the records
+DISC,Discriminator,Discriminator
+OBJ,Object Type,Object Type
+ANCE,Ancestor,Ancestor
+BELO,Belongs To,Belongs To
+ATTR,Attribution,Attribution
+RTST,Is Root Study,Is Root Study
+TLST,Is Top-Level Study,Is Top-Level Study
+STID,Study ID,Study ID
+STNM,Study Name,Study Name
+DIS,Disease,Disease
+PROJ,Project,Project
+GENO,Genotype Platform,Genotype Platform
+SRA,Study Has SRA Components,Study Has SRA components
+STUD,Study,Study
+HASV,Has Variable,Has Variable
+VRID,Variable ID,Variable ID
+VRNM,Variable Name,Variable Name
+VRDS,Variable Description,Variable Description
+VAR,Variable,Variable
+HASD,Has Document,Has Document
+DCID,Document ID,Document ID
+DCNM,Document Name,Document Name
+DOC,Document,Document
+DOCP,Document Part,Document Part
+HASA,Has Analysis,Has Analysis
+ANID,Analysis ID,Analysis ID
+ANNM,Analysis Name,Analysis Name
+ANLS,Analysis,Analysis
+HAST,Has Dataset,Has Dataset
+DSID,Dataset ID,Dataset ID
+DSNM,Dataset Name,Dataset Name
+DS,Dataset,Dataset
+PX,PhenX,PhenX
+HASP,Has PhenX Mapping,Has PhenX Mapping
+ARCH,Study Archive,Study Archive

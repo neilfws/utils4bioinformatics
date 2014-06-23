@@ -1,0 +1,82 @@
+ALL,All Fields,All terms from all searchable fields
+UID,Assay ID,Assay ID
+FILT,Filter,Limits the records
+ANAM,Assay Name,AssayName
+ADES,Assay Description,AssayDescription
+APRL,Assay Protocol,AssayProtocol
+CCMT,Categorized Comment,CategorizedComment
+ACMT,Assay Comment,AssayComment
+TNAM,Tid Name,TidName
+TDES,Tid Description,TidDescription
+RC,Readout Count,ReadoutCount
+SRID,Substance Source ID,External substance source identifier
+ASRD,Assay Source ID,External assay source identifier
+ACMD,Activity Outcome Method,ActivityOutcomeMethod
+SNME,Source Name,SourceName
+CSNM,Current Source Name,CurrentSourceName
+DDAT,Deposit Date,DepositDate
+MDAT,Modify Date,ModifyDate
+JDAT,Journal Publication Date,JournalPublicationDate
+JNAM,Journal Name,JournalName
+HDAT,Hold Until Date,HoldUntilDate
+AC,Active Sid Count,ActiveSidCount
+IAC,Inactive Sid Count,InactiveSidCount
+IC,Inconclusive Sid Count,InconclusiveSidCount
+TSC,Total Sid Count,TotalSidCount
+TCNT,Target Count,TargetCount
+ACC,Active Cid Count,ActiveCidCount
+PCC,Probe Cid Count,ProbeCidCount
+PSC,Probe Sid Count,ProbeSidCount
+IACC,Inactive Cid Count,InactiveCidCount
+ICC,Inconclusive Cid Count,InconclusiveCidCount
+UCC,Unspecified Cid Count,UnspecifiedCidCount
+USC,Unspecified Sid Count,UnspecifiedSidCount
+TCC,Total Cid Count,TotalCidCount
+NARD,Nucleic Acid Reagent ID,NucleicAcidReagentID
+XRCT,XRef Comment,XRefComment
+XRPD,XRef Pmid,XRefPmid
+XRGI,XRef Gi,XRefGi
+XRMB,XRef Mmdb,XRefMmdb
+XRGN,XRef Gene,XRefGeneID
+XRDL,XRef Dburl,XRefDburl
+XRSL,XRef Sburl,XRefSburl
+XRAL,XRef Asurl,XRefAsurl
+XRPI,XRef Proteingi,XRefProteingi
+XRNI,XRef Nucleotidegi,XRefNucleotidegi
+XRTY,XRef Taxonomy,XRefTaxonomy
+XRAD,XRef Aid,XRefAid
+XRMM,XRef Omim,XRefOmim
+SIDA,Substance ID Active,SubstanceIDActive
+SIDT,Substance ID Tested,SubstanceIDTested
+CIDA,Compound ID Active,CompoundIDActive
+CIDT,Compound ID Tested,CompoundIDTested
+MHDA,MeSH Description Active,MeSHDescriptionActive
+MHDT,MeSH Description Tested,MeSHDescriptionTested
+MHTA,MeSH Term Active,MeSHTermActive
+MHTT,MeSH Term Tested,MeSHTermTested
+PTN,Protein Target Name,ProteinTargetName
+PSFM,Protein SubFamily,Protein SubFamily
+GSYM,Gene Symbol,GeneSymbol
+PTC,Protein Target Comment,ProteinTargetComment
+PTD,Protein Target Description,ProteinTargetDescription
+BST,Bio Systems Title,The name of the BioSystems, via Protein target
+CCT,Categorized Comment Title,The name of the categorized comment
+PTGI,Protein Target GI,ProteinTargetGI
+BSID,BioSystems ID,ID of the BioSystems, via Protein Target
+PIGI,Pig GI,PigGI
+RTGI,RNA Target GI,RNATargetGI
+SYNA,Synonym Active,SynonymActive
+SYNT,Synonym Tested,SynonymTested
+PHAA,Pharm Action Active,PharmActionActive
+PHAT,Pharm Action Tested,PharmActionTested
+SRCC,Source Category,SourceCategory
+TXNM,Taxonomy Name,TaxonomyName
+TC,Tested Concentration,TestedConcentration
+GRN,Grant Number,GrantNumber
+NSAM,Number of Sids With Activity Concentration micromolar,NumberofSidsWithActivityConcmicromolar
+NCAM,Number of Cids With Activity Concentration micromolar,NumberofCidsWithActivityConcmicromolar
+NSAN,Number of Sids With Activity Concentration nanomolar,NumberofSidsWithActivityConcnanomolar
+NCAN,Number of Cids With Activity Concentration nanomolar,NumberofCidsWithActivityConcnanomolar
+ORGN,Organism,Scientific and common names of organism, and all higher levels of taxonomy
+APRJ,Assay Project,The name of the summary assay to which this assay is related by same project
+CELL,Cell Line,CellLine

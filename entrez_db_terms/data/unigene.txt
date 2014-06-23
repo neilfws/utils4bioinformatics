@@ -1,0 +1,27 @@
+ALL,All Fields,All terms from all searchable fields
+UID,UID,Unique number assigned to publication
+FILT,Filter,Limits the records
+ORGN,Organism,scientific and common names of organism
+TITL,Title,title of cluster
+LIBR,Library,dbEST library names
+TISS,Tissue,tissue sources of libraries
+CLON,Clone ID,clone ids, with and without IMAGE
+NCAC,Nucleotide Accession,nucleotide accessions of seqeunces
+NUID,Nucleotide UID,nucleotide uids of sequences
+PRAC,Protein Accession,protein accessions
+PUID,Protein UID,protein uids
+PROP,Properties,various flags
+WORD,Text Word,titles of sequences, vectors
+CHR,Chromosome,chromosomes
+GENE,Gene Name,locus link symbol
+GDSC,Gene Description,description of gene
+LLID,Gene ID,gene id
+TXID,Taxonomy ID,taxonomy id
+ESTC,Est Count,number of ests per cluster
+MRNA,mRNA Count,number of mrna per cluster
+SEQC,Sequence Count,total number of sequences per cluster
+CID,Cluster ID,Cluster ID
+EXPR,Expression,library description of all member sequences
+REXP,Restricted Expression,library description of the majority of member sequences
+PRNK,Page Rank,Page Rank
+RTYP,Record Type,record type

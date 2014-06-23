@@ -1,0 +1,16 @@
+ALL,All Fields,All terms from all searchable fields
+UID,UID,Unique number assigned to publication
+FILT,Filter,Limits the records
+ACCN,Accession,Unique text identifier for a CD
+DB,Database,Which database CD is from (pfam, smart ...)
+TITL,Title,The short descriptive name of a CD, e.g. Rho
+STTL,Subtitle,A short description of the CD
+WORD,Text Word,The long description of the CD
+ORGN,Organism,The root taxonomy node of a CD
+PDAT,Publication Date,The date a CD was published
+MDAT,Modification Date,The date a CD was last modified
+PLEN,PssmLength,Length of the PSSM or domain search model
+AACN,Alternative Accession,Alternative unique text identifier for a CD, from source database
+STRP,Structure Representative,The number of structures in a CD
+SD,The description of sites,The desription of functional sites in a domain
+NS,Number of Sites,The number of functional sites in a domain

@@ -1,0 +1,22 @@
+ALL,All Fields,All terms from all searchable fields
+UID,UID,Unique number assigned to publication
+FILT,Filter,Limits the records
+ACCN,Accession,Chromosome accessions
+ASAC,Assembly Accession,Space delimited assembly accessions w/ &amp; w/o versions
+CAT,Category,Assembly Set type or "assembly-unit"
+TXID,Taxonomy Id,Taxonomy Id
+ORGN,Organism,Exploded organism names
+PROJ,Project Id,Uid(s) of this Assembly's Projects
+NAME,Assembly Name,Assembly Name
+ALLN,All Names,All Names, space separated
+COV,Coverage,Sequencing Coverage
+CLAS,Assembly Class,Type of the Assembly
+REL,Release Type,Release Type
+PART,Partial Genome Representation,Partial Genome Representation
+RELS,NCBI Release Date,NCBI Release Date
+LEN,Total Sequence Length,Total length of chromosome/genome including bases and gaps.
+REPL,Chromosome count,Number of chromosomes in assembly
+PLAC,Placed Scaffolds Count,Number of placed scaffolds
+UNLO,Unlocalized Scaffolds Count,Number of unordered(unlocalized) scaffolds belonging to chromosomes
+UNPL,Unplaced Scaffolds Count,Number of unplaced scaffolds which do not belong to any chromosome, ie ChrUn
+PROP,Properties,Properties

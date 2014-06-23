@@ -1,0 +1,77 @@
+ALL,All Fields,All terms from all searchable fields
+UID,UID,Unique number assigned to publication
+FILT,Filter,Limits the records
+ACC,Accession,Accession of any internal or external identifier. Versions removed from GENBANK accessions.
+ACCV,Accession Version,Accession and version of GENBANK accessions used in variant sequence or support.
+LAB,Submitter Affiliation,Submitter's affiliation name
+ALOR,Allele Origin,Allele origin (controlled vocabulary), including Both=Germline+Somatic
+ALTP,Variant Call Type,Variant Call type (controlled vocabulary)
+ASSM,Assembly Name,Assembly of placement
+ASAC,Assembly Accession,Assembly accession of placement
+AORG,Assembly Organism,Assembly organism names (exploded)
+ATAX,Assembly Taxonomy ID,Assembly taxonomy ID
+AUTH,Author,All authors included in journal
+BLCK,Block Start,Start of a 100k block on chromosome containing the variant.
+CH,Chromosome,Chromosome of placement
+CHRA,Chromosome Accession,Chromosome of placement, using accession.version
+CHRE,Chromosome End,End of placement on chromosome
+CHRS,Chromosome Start,Start of placement on chromosome
+INRE,Chromosome Inner End,Inner end of placement on chromosome
+INRS,Chromosome Inner Start,Inner start of placement on chromosome
+OTRE,Chromosome Outer End,Outer end of placement on chromosome
+OTRS,Chromosome Outer Start,Outer start of placement on chromosome
+CLIN,Variant Clinical Interpretation,Clinical interpretation of a variant (controlled vocabulary)
+CLVA,ClinVar Accession,ClinVar Accession (SCV)
+CTG,Unplaced Contig Accession,Contig of placement, when not on a chromosome, using accession.version
+DET,Detection Method,Detection method
+DESC,Variant Description,Variant description
+DDAT,Discontinued Date,dbVar discontinued date
+ESSV,Numeric Portion of EBI Variant Call ID,Numeric portion of EBI Variant Call ID (essv)
+ESTD,Numeric Portion of EBI Study ID,Numeric portion of EBI Study ID (estd)
+ESV,Numeric Portion of EBI Variant Region ID,Numeric portion of EBI Variant Region ID (esv)
+GENE,Gene Name,Name or alias of gene at same location as variant
+GNID,Entrez Gene ID,Gene ID of gene at same location as variant
+GDSC,Gene Full Name,Full name (description) of gene at same location as variant
+LIB,Library Abbreviation,Library name used in the Method
+MPLT,Method Platform,Method platform
+MSUB,Method Submission Name,Submission name of individual method, used when study contains multiple methods from different submitters, as does the curated dataset.
+METH,Method Type,Method type (controlled vocabulary)
+MCAT,Method Type Category,Used for sorting and display. Methods are categorized as: probe, mapping, sequencing.
+MWGT,Method Type Weight,used for sorting. BAC=all Method_type values of study or variant are BAC aCGH, Non-BAC=study or variant has at least 1 method_type that is other than BAC aCGH
+MESH,MeSH ID,Medical Subject Headings (MeSH) ID (exploded)
+MIM,MIM ID,Online Mendelian Inheritance in Man
+NCBI,Submitter MyNCBI ID,Submitter login ID in myNCBI system
+NSSV,Numeric Portion of NCBI Variant Call ID,Numeric portion of NCBI Variant Call ID (nssv)
+NST,Numeric Portion of NCBI Study ID,Numeric portion of NCBI Study ID (nstd)
+NSV,Numeric Portion of NCBI Variant Region ID,Numeric portion of NCBI Variant Region ID (nsv)
+OT,Object Type,Object type in dbVar (STUDY, VARIANT)
+ORG,Organism,Organism name (exploded)
+PDA,Submitter PDA Login,Submitter login ID in NCBI PDA system
+PHEN,Phenotype,Phenotype of sample/subject study or reference specimen
+PTYP,Placement Type,Placement type (controlled vocabulary)
+PMID,PMID,Unique identifier from PubMed
+GPRJ,Genome Projects ID,Unique identifier from Genome Projects
+PRNM,Genome Projects Name,Name from Genome Projects corresponding to Project_ID
+PDAT,Publication Date,Journal Publication date
+SSV,Variant Call Accession,dbVar ID (essv or nssv) of Variant Call
+ST,Study Accession,Study dbVar ID (estd or nstd)
+SV,Variant Region Accession,dbVar ID (esv or nsv) of Variant Region
+SMPL,Sample,Sample/subject ID of study or reference specimen
+SC,Sample Count,Number of samples in study
+STDE,Study Description,Study description
+STDN,Study Display Name,Study display name
+STDY,Study ID,Study, batch or submission ID
+STYP,Study Type,Study type assigned by NCBI
+SVAR,Submitter Variant ID,Originally submitted variant identifier
+SUPH,Subject Phenotype status,Boolean subject phenotype status: 0=not affected/null; 1 = affected
+SUB,Submitter Name,Submitter first and last name
+SSVC,Variant Call Count,Number of supporting variant calls in variant region
+TXID,Taxonomy ID,Taxonomy ID
+MDAT,Modification Date,dbVar Modification Date
+VAL,Validation Method,Validation method (controlled vocabulary)
+VSTA,Validation Result,Boolean validation status: null=not validated, 0=validated with result=0; 1 = validated with result=1
+VWGT,Validation Result Weight,0=not validated, 1=validated with result=0; 2 = validated with result=1
+VC,Variant Region Count,Number of variant regions in study
+VLEN,Variant Size,Size of variant
+VT,Variant Region Type,Variant region type (controlled vocabulary)
+ZYG,Variant Zygosity,Zygosity of a variant (controlled vocabulary)

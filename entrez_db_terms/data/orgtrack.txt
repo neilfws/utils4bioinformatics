@@ -1,0 +1,36 @@
+ALL,All Fields,All terms from all searchable fields
+UID,UID,Unique number assigned to publication
+FILT,Filter,Limits the records
+WORD,Text Word,Free text associated with record
+WRD1,Text Word 1,Free text associated with record with higher score then regular TEXT field
+PROP,Properties,Properties of this record
+TITL,Organization name,Lab or Clinic name including institution and department
+CITY,Organization City,City in which the organization is located
+ST,Organization State or province,State, province or other political subdivision  in which the organization is located
+CTRY,Organization Country,Country in which the organization is located
+LOC,Organization Location,City, State, Country in which the organization is located
+PCOD,Organization  postal code,Postal code for the organization
+DIR,Organization Director(s),Full names of  director(s) with credentials
+STFF,Organization Staff,full names of non-director staff with credentials
+LS,Lab Service name,Lab Service name
+TYPE,Type of organization,category of an organization, e.g. laboratory, clinic, LSDB
+MDAT,Modification Date,The last date on which the record was updated
+TNO,Number of tests offered,Number of tests offered by this organization
+SNO,SERVICE NUMBER,Unique identifier for the state or province
+MTOD,Name of Method,method name
+MCAT,name for method category,name for method category
+TCAT,name for method top category,name for method top category
+LCRT,laboratory certification,laboratory certification
+CID,Country ISO code,Country ISO code
+SID,State ISO code,State ISO code
+TCID,Top Method Category ID,Top Method Category ID
+CTID,Method Category ID,Method Category ID
+DTCT,Disease and Top Method Category ID,Disease and Top Method Category ID
+DCAT,Disease and Method Category ID,Disease and Method Category ID
+MTID,Test Method ID,Test Method ID
+DID,Disease BioConcepts Entrez ID,Disease BioConcepts Entrez ID
+LSID,Lab Service ID,Lab Service ID
+DCUI,Disease BioConcepts concept id,Concept identifier from BioConcepts for a disease
+ORGN,Organism,scientific and common names of organism
+DASV,Disease and Additional Service ID,Disease and Additional Service ID
+ASID,Additional Service ID,Additional Service ID

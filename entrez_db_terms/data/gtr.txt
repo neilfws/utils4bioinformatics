@@ -1,0 +1,47 @@
+ALL,All Fields,All terms from all searchable fields
+UID,UID,Unique number assigned to publication
+FILT,Filter,Limits the records
+WORD,Text Word,Free text associated with record
+WRD1,Text Word 1,Free text associated with record with higher score then regular TEXT field
+PROP,Properties,Properties of this record
+ORG,Organization names,Lab or Clinic name including institution and department
+OID,Organization UID,Unique number for this lab/clinic
+CITY,Organization City,Lab or clinic city
+STATE,Organization State,Lab or clinic State or province
+COUNTRY,Organization Country,Lab or clinic Country
+POSTCODE,Organization postcode,Lab or clinic zip or postcode
+DIRECTOR,Organization Director(s),Lab or clinic director(s)
+STAFF,Organization Staff,Lab or clinic Staff name
+LS,Lab Service name,Lab Service name
+GTRACC,Accession for GTR test,Accession for GTR test
+MDAT,Modification Date,The last date on which the record was updated
+NAME,name for this test,name for this test
+ALT,Alternate name,alternate short and full names for test
+TESTDIS,disease name for this test,preferred name of disease by lab
+SPECIMEN,Specimen options for test,Specimen options for test
+TITL,title of this clinvar assertion,title of this clinvar assertion
+CVACC,Accession for clinvar assertion,Accession for clinvar assertion
+DCUI,Disease BioConcepts concept id,Concept identifier from BioConcepts for a disease
+DISNAME,Name of Disease,preferred full name
+GCUI,Gene BioConcepts concept id,Concept identifier from BioConcepts for a gene
+GENEID,UID for a record from Gene,Unique number for this record
+SYMB,Gene Symbol,Symbol or symbols of the gene
+GENENAME,Name of Gene,preferred full name
+GENEMIM,MIM number for the Gene,MIM number for the Gene
+PROTNAME,Name of Protein,preferred full name
+MTOD,Name of Method,method name
+MCAT,name for method category,name for method category
+TCAT,name for method top category,name for method top category
+LCRT,laboratory certification,laboratory certification
+CID,Country ISO code,Country ISO code
+SID,State ISO code,State ISO code
+TCID,Top Method Category ID,Top Method Category ID
+CTID,Method Category ID,Method Category ID
+MTID,Test Method ID,Test Method ID
+DID,Disease BioConcepts Entrez ID,Disease BioConcepts Entrez ID
+ORGN,Organism,scientific and common names of organism
+TARPOP,Target Population option for the test,Target Population option for the test
+CLNUTL,Clinical Utility option for the test,Clinical Utility option for the test
+CLNVAL,Clinical Validity option for the test,Clinical Validity option for the test
+GENENUM,Number of genes,Number of genes explicitly listed as being targeted in a test
+pharma,Pharmacogenetic response condition,Names of conditions that are identified as being pharmacogenetic responses
