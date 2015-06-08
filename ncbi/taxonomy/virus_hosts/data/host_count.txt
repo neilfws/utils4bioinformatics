@@ -1,0 +1,19 @@
+   1301 
+    283 algae
+    114 archaea
+   4509 bacteria
+      8 diatom
+     51 enviroment
+    267 fungi
+      1 fungi| plants| invertebrates
+      4 human
+    761 invertebrates
+    181 invertebrates| plants
+      7 invertebrates| vertebrates
+   3979 plants
+    102 protozoa
+   6834 vertebrates
+ 115052 vertebrates| human
+     43 vertebrates| human  stool
+    225 vertebrates| invertebrates
+    656 vertebrates| invertebrates| human
