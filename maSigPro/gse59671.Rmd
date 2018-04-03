@@ -1,0 +1,220 @@
+---
+title: "Analysis of gene expression timecourse data using maSigPro"
+author: "Neil Saunders"
+date: "`r Sys.time()`"
+output:
+  github_document:
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, 
+                      message = FALSE, 
+                      warning = FALSE)
+library(tidyverse)
+library(GEOquery)
+library(maSigPro)
+library(biomaRt)
+library(pander)
+
+theme_set(theme_bw())
+
+getGenes <- function(sig, bm) {
+  genes <- getBM(attributes = c("affy_hg_u133a_2", "hgnc_symbol"), 
+                 filters = "affy_hg_u133a_2", 
+                 values = rownames(sig), 
+                 mart = bm)
+  m <- match(rownames(sig), genes$affy_hg_u133a_2)
+  sig$gene <- genes[m, "hgnc_symbol"]
+  return(sig)
+}
+
+plotGenes <- function(e, probe, g, md) {
+  d <- e[p, ] %>% 
+    as.data.frame() %>% 
+    setNames("value") %>% 
+    mutate(Rep = md$Replicate,
+           time = md$Time,
+           agent = md$agent)
+  gg <- d %>% 
+    ggplot(aes(time, value)) + 
+      geom_boxplot(aes(position = factor(time)), outlier.shape = NA) + 
+      scale_x_continuous(breaks = unique(d$time)) + 
+      geom_jitter(aes(color = factor(agent))) + 
+      geom_smooth() + 
+      labs(title = paste(g, probe, sep = "/"), 
+           x = "time (hours)", 
+           y = "RMA value") + 
+      scale_color_discrete(name = "treatment")
+  return(gg)
+}
+```
+
+# Introduction
+This tutorial looks at how to use the Bioconductor package [maSigPro](http://www.bioconductor.org/packages/release/bioc/html/maSigPro.html) to analyse the expression of genes over time.
+
+# Retrieving data using GEOquery
+First, we search the [NCBI GEO database](http://www.ncbi.nlm.nih.gov/geo) for suitable public datasets. The experimental design criteria that we would like to satisfy are:
+
+- several timepoints
+- several samples per timepoint
+- clarity in how expression data were obtained (normalisation, log2 values)
+- of some biological interest (easy to link to other data sources)
+
+Datasets that satisfy these criteria are not easy to discover. Eventually we settled on the study titled [Celecoxib, rofecoxib treated human smooth muscle cells microarray timecourse (GSE59671)](http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE59671). In this study cells were pre-treated with one of two drugs then exposed to a protein, interleukin 1-beta, involved in inflammatory responses. Four biological replicates for each drug treatment and untreated controls were analysed at 0, 2, 8 and 24 hours post-IL1b exposure, generating 4 x 3 x 4 = 48 samples. A further 4 control samples were collected at "-2 hours", i.e. prior to IL1b-exposure.
+
+## Expression data
+First we fetch the GEO series dataset using GEOquery. Getting the expression values is easy using _exprs()_. A quick check to see that they "look like" normalised log2 values (it's stated that they are at the GEO website).
+
+```{r getGEO, cache=TRUE}
+gse <- getGEO("GSE59671")
+exp <- exprs(gse$GSE59671_series_matrix.txt.gz)
+
+exp %>%
+  as.data.frame() %>%
+  dplyr::select(1:4) %>%
+  slice(1:4) %>%
+  pander(justify = "right")
+```
+
+## Phenotypic data
+"Phenotypic" data, the details of the experimental design, can be accessed using _pData()_.
+
+```{r pdata}
+pd <- pData(gse$GSE59671_series_matrix.txt.gz)
+names(pd)
+```
+
+We can see that times and treatments are captured in the title attribute.
+```{r}
+pd$title[1] %>%
+  as.character()
+```
+
+# Creating a design matrix
+We can parse the sample titles using _str\_match_ from the _stringr_ package, then do some data cleaning to create the data frame used for the design matrix.
+
+```{r designdata}
+pd.des <- str_match(pd$title, "^(.*?)_(.*?)_(.*?)_(.*?)\\s+(.*?)$")[, 2:6] %>% 
+  as.data.frame() %>% 
+  setNames(c("cell", "agent", "Time", "bio", "Replicate")) %>% 
+  mutate(bio = NULL,
+         hasmc = ifelse(cell == "hasmc", 1, 0),
+         Control = ifelse(agent == "none", 1, 0),
+         celecoxib = ifelse(agent == "celecoxib", 1, 0),
+         rofecoxib = ifelse(agent == "rofecoxib", 1, 0),
+         Time = gsub("tp", "", Time),
+         Time = gsub("hr", "", Time),
+         Time = as.numeric(Time))
+
+pd.des %>%
+  slice(1:5) %>%
+  pander(justify = "right")
+```
+
+The last steps are to drop the -2 hour samples (to simplify things), number the replicates correctly and importantly, add the GEO sample names as row names in the data frame <code>pd.res</code>, so as the expression data matches the phenotypic data.
+
+Now we can make the design matrix from the data frame with degree = 3 (4 timepoints - 1). Note that times and replicates are given their numeric values; conditions (cell type, control or treated) are signified by values of 0 or 1.
+
+```{r design}
+exp.des <- exp[, c(1:16, 21:52)]
+pd.des <- pd.des[c(1:16, 21:52), ]
+pd.des$Replicate <- rep(1:12, 1, each = 4)
+rownames(pd.des) <- pd$geo_accession[c(1:16, 21:52)]
+
+# now we can make the design matrix from the appropriate columns
+design <- make.design.matrix(pd.des[, c(3, 4, 6:8)], degree = 3)
+
+design$edesign %>%
+  as.data.frame() %>% 
+  slice(1:5) %>% 
+  pander(justify = "right")
+```
+
+# Fitting the regression model
+## From regression model to significant genes
+Now we proceed exactly as described in the maSigPro users guide, fitting a regression model to discover probesets with significant differential expression over time. The functions _p.vector()_ and _T.fit()_ use _print()_ to report progress, so we're hiding that output here using _capture.output()_.
+
+```{r regression}
+hide <- capture.output(fit <- p.vector(exp.des, design))
+hide <- capture.output(tstep <- T.fit(fit, step.method = "backward", alfa = 0.05))
+sigs <- get.siggenes(tstep, rsq = 0.6, vars = "groups")
+```
+
+The list _sigs_ is a surprisingly complex object.
+
+```{r siggenes}
+sigs %>%
+  glimpse()
+```
+
+Detailed information about significant genes is stored in the list _sig.genes_. Since we specified <code>vars = "groups"</code>, times and treatments are returned together for each treatment. So for example, _sigs$sig.genes$Control_ returns data for the Control (untreated) time points; _sigs$sig.genes$celecoxibvsControl_ returns data for time points with the contrast celecoxib treatment versus Control.
+
+We can get the data frames with p-values for control, celecoxib- and rofecoxib-treated cells.
+
+```{r pvals}
+control   <- sigs$sig.genes$Control$sig.pvalues
+celecoxib <- sigs$sig.genes$celecoxibvsControl$sig.pvalues
+rofecoxib <- sigs$sig.genes$rofecoxibvsControl$sig.pvalues
+```
+
+## Matching probesets to genes using biomaRt
+Next, we write a function that uses biomaRt to fetch HGNC gene symbols for the probesets.
+
+```{r getGenes}
+mart.hs <- useMart("ensembl", "hsapiens_gene_ensembl")
+control   <- getGenes(control, mart.hs)
+celecoxib <- getGenes(rofecoxib, mart.hs)
+rofecoxib <- getGenes(rofecoxib, mart.hs)
+```
+
+Now we're ready to look at "interesting genes".
+
+# Plotting timecourses for genes of interest
+
+## Control samples
+Let's start with the control samples (no drug treatment), sorting on the p-value column. We then write a function that uses ggplot2 to plot the RMA expression values for the probeset corresponding to a given gene. We'll test it with the first probeset.
+
+```{r plot1, fig.height=6, fig.width=9}
+# head(control[order(control$`p-value`, decreasing = FALSE), ])
+
+p    <- rownames(control[order(control$`p-value`, decreasing = FALSE), ])[1]
+gene <- ifelse(is.na(subset(control, rownames(control) == p)$gene), p, subset(control, rownames(control) == p)$gene)
+plotGenes(exp.des, p, gene, pd.des)
+```
+
+Expression of the gene CD83 rises dramatically in the first 2 hours after exposure to IL1b, then drops back to the base level by 8 hours. A quick Google search for the term "CD83 inflammation" indicates that the gene is involved with inflammatory responses.
+
+Let's try another - say, number 6 in the list.
+
+```{r plot2, fig.height=6, fig.width=9}
+p <- rownames(control[order(control$`p-value`, decreasing = FALSE), ])[6]
+gene <- ifelse(is.na(subset(control, rownames(control) == p)$gene), p, subset(control, rownames(control) == p)$gene)
+plotGenes(exp.des, p, gene, pd.des)
+```
+
+The ANXA11 gene is also involved with inflammation and shows the opposite behaviour to CD83; expression drops ~ 3-4 fold in the first 8 hours, then rises gradually from 8-24 hours.
+
+## Treated samples
+Did the drug treatments make any difference to the IL1b response? Let's start with the best p-value for celecoxib versus Control.
+
+```{r plot3, fig.height=6, fig.width=9}
+p    <- rownames(celecoxib[order(celecoxib$p.valor_celecoxibvsControl, decreasing = FALSE), ])[1]
+gene <- ifelse(is.na(subset(celecoxib, rownames(celecoxib) == p)$gene), p, subset(celecoxib, rownames(celecoxib) == p)$gene)
+plotGenes(exp.des, p, gene, pd.des)
+```
+
+There is some indication that expression of JRK post-IL1b exposure was lowered less between 0-2 hours in celecoxib-treated cells, but it's not incredibly convincing as the fold-change overall is quite low under all conditions.  What about rofecoxib?
+
+```{r plot4, fig.height=6, fig.width=9}
+p    <- rownames(rofecoxib[order(rofecoxib$p.valor_rofecoxibvsControl, decreasing = FALSE), ])[1]
+gene <- ifelse(is.na(subset(rofecoxib, rownames(rofecoxib) == p)$gene), p, subset(rofecoxib, rownames(rofecoxib) == p)$gene)
+plotGenes(exp.des, p, gene, pd.des)
+```
+
+It appears that this p-value is driven by higher PIK3C2B expression in 3/4 rofecoxib-treated samples at t = 0. Perhaps the less-than-dramatic effects of drug treatment explain why this GEO series is not associated with a publication.
+
+# Summary
+* maSigPro is a useful, effective package for analysis of timecourse microarray data
+* It combines well with ggplot2 to generate attractive and informative plots of gene expression over time
+* The example dataset GSE59671 reveals some interesting effects on the expression of inflammation-associated genes when cells are exposed to ILb1
