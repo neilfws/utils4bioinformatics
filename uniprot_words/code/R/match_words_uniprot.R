@@ -14,7 +14,7 @@ sp <- read.fasta("~/Downloads/uniprot_sprot.fasta.gz",
 
 # search & retain only hits
 results <- AhoCorasickSearchList(words[which(nchar(words) > 7)], sp, alphabet = "aminoacid")
-results <- results[which(sapply(results, function(x) length(x[[1]] > 0)))]
+results <- results[which(sapply(results, function(x) length(x[[1]]) > 0))]
 
 # subset into first & second hits then recombine
 # my this is ugly
