@@ -8,3 +8,4 @@ Little code snippets that do (hopefully) useful things.
 1. ncbi/taxonomy - utilities for working with the NCBI Taxonomy database
 1. citeulike - code for working with CiteULike collections
 1. maSigPro - tutorial for the Bioconductor maSigPro package
+1. brauer2007 - trying out random forest on yeast expression data
