@@ -48,6 +48,8 @@ brauer2007_tidy_rf1 <- brauer2007_tidy %>%
   select(systematic_name, nutrient, rate, expression) %>% 
   spread(systematic_name, expression, fill = 0) %>% 
   randomForest(nutrient ~ ., data = ., localImp = TRUE, importance = TRUE)
+
+brauer2007_tidy_rf1
 ```
 
 # Top 20 variables by importance

@@ -1,7 +1,7 @@
 Can gene expression predict limiting nutrients in a random forest model?
 ================
 Neil Saunders
-2019-06-26 21:09:02
+2019-06-26 21:40:27
 
 # Introduction
 
@@ -45,7 +45,26 @@ brauer2007_tidy_rf1 <- brauer2007_tidy %>%
   select(systematic_name, nutrient, rate, expression) %>% 
   spread(systematic_name, expression, fill = 0) %>% 
   randomForest(nutrient ~ ., data = ., localImp = TRUE, importance = TRUE)
+
+brauer2007_tidy_rf1
 ```
+
+    ## 
+    ## Call:
+    ##  randomForest(formula = nutrient ~ ., data = ., localImp = TRUE,      importance = TRUE) 
+    ##                Type of random forest: classification
+    ##                      Number of trees: 500
+    ## No. of variables tried at each split: 74
+    ## 
+    ##         OOB estimate of  error rate: 5.56%
+    ## Confusion matrix:
+    ##           Ammonia Glucose Leucine Phosphate Sulfate Uracil class.error
+    ## Ammonia         6       0       0         0       0      0   0.0000000
+    ## Glucose         0       6       0         0       0      0   0.0000000
+    ## Leucine         0       1       5         0       0      0   0.1666667
+    ## Phosphate       0       0       0         6       0      0   0.0000000
+    ## Sulfate         0       0       0         0       6      0   0.0000000
+    ## Uracil          0       1       0         0       0      5   0.1666667
 
 # Top 20 variables by importance
 
